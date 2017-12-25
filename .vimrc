@@ -7,7 +7,6 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -18,10 +17,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'rking/ag.vim'
 
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -39,5 +34,5 @@ let mapleader=","
 nnoremap <leader>rv :source $MYVIMRC<CR>
 nnoremap ) :bn<CR>
 nnoremap ( :bp<CR>
-nnoremap th :tabfirst<CR>
-nnoremap tl :tabprev<CR>
+nnoremap th :tabprev<CR>
+nnoremap tl :tvbnext<CR>
