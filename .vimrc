@@ -34,5 +34,5 @@ let mapleader=","
 nnoremap <leader>rv :source $MYVIMRC<CR>
 nnoremap ) :bn<CR>
 nnoremap ( :bp<CR>
-nnoremap th :tabprev<CR>
-nnoremap tl :tvbnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tk :tabnext<CR>
