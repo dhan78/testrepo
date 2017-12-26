@@ -14,8 +14,6 @@ options = dict(tools="", toolbar_location=None, plot_height=300, plot_width=300)
 p1 = figure(title="Line (300 x 100)", **options)
 p1.plot_height = 100
 p1.line(x, y)
-def abcd():
-    print ("abcd")
 p2 = figure(title="Annular wedge (100 x 300)", title_location='right', **options)
 p2.plot_width = 100
 p2.annular_wedge(x, y, 10, 20, 0.6, 4.1, inner_radius_units="screen", outer_radius_units="screen")

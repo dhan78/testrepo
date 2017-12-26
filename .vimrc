@@ -10,7 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'valloric/youcompleteme'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
@@ -30,7 +30,7 @@ set shiftwidth=4
 set expandtab
 set mouse=a
 let mapleader=","
-:map <F5> :NERDTree<CR>
+:map <F4> :NERDTree<CR>
 nnoremap <leader>rv :source $MYVIMRC<CR>
 nnoremap ) :bn<CR>
 nnoremap ( :bp<CR>
