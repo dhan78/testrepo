@@ -15,7 +15,18 @@
 
     <!-- Custom styles for this template -->
     <link href="{{url_for('static',filename='modern-business.css') }}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/960eb2342c.js"></script>
 
+    <style>
+        .carousel-caption {
+            top: 50%;
+            transform: translateY(-50%);
+            #text-transform: uppercase;
+        }
+        .navbar-nav ,.card-body , .col-lg-6 {
+            font-size: .7em;
+        }
+    </style>
   </head>
 
   <body>
@@ -23,31 +34,31 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand" href="index">Start Bootstrap</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Portfolio
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                <a class="dropdown-item" href="portfolio-1-col">1 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-2-col">2 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-3-col">3 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-4-col">4 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-item">Single Portfolio Item</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -55,9 +66,9 @@
                 Blog
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                <a class="dropdown-item" href="blog-home-1">Blog Home 1</a>
+                <a class="dropdown-item" href="blog-home-2">Blog Home 2</a>
+                <a class="dropdown-item" href="blog-post">Blog Post</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -65,11 +76,11 @@
                 Other Pages
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                <a class="dropdown-item" href="full-width">Full Width Page</a>
+                <a class="dropdown-item" href="sidebar">Sidebar Page</a>
+                <a class="dropdown-item" href="faq">FAQ</a>
+                <a class="dropdown-item" href="404">404</a>
+                <a class="dropdown-item" href="pricing">Pricing Table</a>
               </div>
             </li>
           </ul>
@@ -86,21 +97,22 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('/static/ai_logo.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <h2>Core Expertise</h2>
+              <p>Automated data analysis provides scalable, accurate, continually refreshing predictive analytics using deep learning or machine learning algorithms </p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('/static/ai_logo2.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+              <h3>Engagement Model</h3>
+              <p>Turn your existing legacy and operational data, maintenance records, and ERP/APM system data into actionable business insights </p>
+
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('/static/Banner1.png')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
@@ -121,15 +133,16 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1 class="my-4">Welcome to Modern Business</h1>
+      <h1 class="my-4">The ADB Advantage</h1>
 
       <!-- Marketing Icons Section -->
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">AI: Deep Learning</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">Turn your existing legacy data into intelligent actionalble insights for your business
+              </p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
@@ -138,9 +151,9 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">Machine Learning</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+              <p class="card-text">Our Machine learning models help with strategic and real-time optimization of metrics, predictive analytics and maintenance, radical personalization</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
@@ -149,9 +162,9 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">Real Time Analytics</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">We will assist in deployting real-time predictive analytics dashboards, integrate and personalize within your domain. We help discover new trends/anomalies, forecasting and processing unstructured data</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
@@ -237,7 +250,7 @@
       <!-- Features Section -->
       <div class="row">
         <div class="col-lg-6">
-          <h2>Modern Business Features</h2>
+          <h2>ADB core profeciencies</h2>
           <p>The Modern Business template by Start Bootstrap includes:</p>
           <ul>
             <li>
